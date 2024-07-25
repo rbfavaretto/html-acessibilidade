@@ -1,0 +1,81 @@
+LANDMARKS:
+
+    Tags que marcam pontos de referência (landmarks) foram introduzidas no lançamento do HTML5. antes era utilizado o atributo "role".
+    Visualmente o efeito que essas tags possuem é similar ao das div's, elas não mudam em nada o conteúdo/apresentação. (section altera os headers).
+
+<main> <nav> <section> <article> <aside> <footer> <header>
+
+MAIN:
+
+    A tag <main> marca o conteúdo principal da página.
+
+    * Exemplos:
+      Blog: conteúdo do artigo. Comércio eletrônico: descrição/imagem/preço do produto.
+
+    * Observação:
+      Utilize uma por página.
+
+NAVEGAÇÃO:
+
+    A tag <nav> marca um bloco de navegação.
+
+    * Exemplos:
+      Geralmente utilizado para a navegação primária e secundária do site.
+    
+    * Observação
+      Evite o uso de diversas tags "nav", use apenas para a navegação essencial.
+
+ARTICLE:
+
+    A tag "article" representa uma região do site que é autoexplicativa (não precisa do restante do site para fazer sentido). Geralmente deve conter um título (h's).
+
+    * Exemplos:
+      Lista de produtos do site, um artigo, post na rede social e outros.
+
+    * Aria-label
+      Título da região visualmente escondido, mas lido pelo leitor de tela.
+
+    * Aria-labelledby
+      Caso o título exista na tela, marque o mesmo com um "id" e use este atributo para criar uma relação entre eles.
+
+    * Observação:
+      Oficialmente não cria uma landmark, mas muitos leitores de tela utilizam ela como referência para marcar regiões do site. A tag é até mais consistente do que a section para marcar regiões do site.
+
+      https://www.smashingmagazine.com/2020/01/html5-article-section/
+
+SECTION:
+
+    A tag section pode ser utilizada para agrupar o conteúdo do site em diferentes regiões. Geralmente o conteúdo necessita do seu contexto para ser compreendido.
+
+    * aria-label:
+      Se utiliza com o atributo aria-label cria uma região do site.
+    
+    * observação:
+      O h1 é impactado em termos visuais quando utilizado na section. O section foi criado para melhor lidar com os headings, porém sua idealização nunca foi implementada (até hoje 2021):
+
+      https://adrianroselli.com/2016/08/tehre-is-no-document-outline-algorithm.html
+
+ASIDE:
+
+    A tag "aside" é utilizada para marcar conteúdo complementar ao principal do site.
+
+    * Exemplos
+      Lista de posts mais visitados, informações extras como a descrição de um termo usado no artigo e mais. 
+
+HEADER:
+
+    A tag <header> marca o cabeçalho do site (banner), onde geralmente estão presentes a marca, navegação do site e as vezes uma informação introdutória.
+
+    * Exemplos
+      Pode também ser utilizada para marcar o cabeçalho de regiões como o título de um artigo, data, autor e outras informações.
+    
+    * Observação:
+      Apenas cria uma landmark se não estiver dentro de main, section, article ou aside.
+
+FOOTER:
+
+    A tag <footer> marca o rodapé do site, geralmente contém informação sobre os direitos autorais, quem escreveu e links para documentos relacionados.
+
+    * observação:
+      Apenas cria uma landmark se não estiver dentro de main, section, article ou aside.
+

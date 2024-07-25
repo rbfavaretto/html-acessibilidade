@@ -1,0 +1,19 @@
+BLOCKQUOTE:
+
+blockquote marca uma citação extensa e recebe um atributo cite com a fonte.
+
+Q:
+
+q marca uma citação inline (no texto).
+
+CITE:
+
+cite é utilizada para citar o nome de um trabalho, livro, filme, peça ou algo parecido. Não é para citar autor.
+
+EM:
+
+em é utilizada para dar enfase em uma frase/palavra no texto.
+
+STRONG:
+
+strong é utilizada para marcar uma parte importante do conteúdo

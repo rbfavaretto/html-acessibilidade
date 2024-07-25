@@ -1,0 +1,6 @@
+UL:
+
+    A tag <ul> marca uma lista de itens sem ordem (unordered list). Cada item da lista deve ser marcado com uma <li></li>
+
+* Acessibilidade:
+  Listas são anunciadas pelo leitor de tela e o usuário é informado previamente quantos itens existem na lista.
